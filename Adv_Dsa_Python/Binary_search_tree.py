@@ -39,6 +39,7 @@ class BST:
 
     def _delete_node(self, node, key):
         if not node:
+            print("The searching element is not found.")
             return node  # Base case: key not found
 
         # Traverse the tree to find the node to delete
@@ -84,19 +85,32 @@ class BST:
 
 if __name__=="__main__":
     bst=BST()
-    bst.insert(30)
-    bst.insert(20)
-    bst.insert(40)
-    bst.insert(50)
-    bst.insert(10)
-    bst.insert(60)
-    bst.insert(45)
-    bst.insert(55)
+    # bst.insert(30)
+    # bst.insert(20)
+    # bst.insert(40)
+    # bst.insert(50)
+    # bst.insert(10)
+    # bst.insert(60)
+    # bst.insert(45)
+    # bst.insert(55)
+    #  ******* Enter the values with space not by new lines *******
+    # nodes=[]
+    # nodes =list(map(int,input("Enter the values of nodes and give -1 for stop:\n").split()))
+    # for i in nodes:
+    #     bst.insert(i)
+    
+    # ********** Enter the values with new lines **********
+    values=[]
+    while True:
+        value=int(input("Enter the values until press -1: "))
+        if value==-1:
+            break
+        bst.insert(value)
     print(f"The minimum element of the tree is {bst._find_min()}")
     n=int(input("Enter a element to search: "))
     print("The searching element is :","founded" if bst.search(n) else "Not founded.")
     m=int(input("Enter the element which you want to delete."))
     bst.delete(m)
     bst.inorder_traversal()
-    
+    # bst.count_node()
     
