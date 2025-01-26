@@ -10,21 +10,23 @@ public class Solution {
         int lenA=A.length();
         int left=0;
         int right=lenA-1;
+        int flag=0;
         /* Enter your code here. Print output to STDOUT. */
-        if (lenA%2!=0){
             while (left<right){
                 if (A.charAt(left)!=A.charAt(right)){
-                    System.out.print("No");
+                    flag=1;
                 }
                 left++;
                 right--;
             }
-            System.out.print("Yes");
-        }
-        else{
+        if(flag==1){
             System.out.print("No");
         }
+        else{
+            System.out.print("Yes");
+        }
     }
+}
 }
 
 
