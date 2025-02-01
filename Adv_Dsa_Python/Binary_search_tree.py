@@ -112,5 +112,4 @@ if __name__=="__main__":
     m=int(input("Enter the element which you want to delete."))
     bst.delete(m)
     bst.inorder_traversal()
-    # bst.count_node()
     
