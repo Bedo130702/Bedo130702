@@ -162,7 +162,7 @@ class Main
         System.out.println("Enter the number of terms");
         Scanner obj = new Scanner(System.in);
         a = obj.nextInt();
-        for(int i = 0 ;i<=a;i++)
+        for(int i = 1 ;i<=a;i++)
         {
             em = em + i;
         }
