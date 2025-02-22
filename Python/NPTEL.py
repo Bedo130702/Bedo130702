@@ -11,7 +11,7 @@ str3=temp+str2[1:]
 
 print(str3)
 
-<<Qs-2>>Swap first 2 chars of 2 strings.
+# <<Qs-2>>Swap first 2 chars of 2 strings.
 
 str1="abc"
 str2="xyz"
