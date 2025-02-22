@@ -1,5 +1,5 @@
 #  Q-1) password check
-import os
+# import os
 
 def passwordCracker(passwords, loginAttempt):
     memo = {}  # Memoization for dynamic programming
